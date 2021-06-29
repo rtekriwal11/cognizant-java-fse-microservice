@@ -1,0 +1,12 @@
+
+eureka.client.service-url.defaultZone=
+http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka
+
+This tells that EUREKA can run on any other port also.Just change the running port of eureka
+to some port like 8000 and then run the other application also in that port
+click main appln of eureka server go to run config in run select eureka-server in list then
+arguments and write in VM arguments at next line-"-Dserver.port=8000"(you can run on any port
+but then ensure the microservice r run on that port
+
+Then in api-gateway run main appln by goign to run config api-gateway environment:
+EUREKA.PORT=8000 save run then eureka will run on port 8000 followed by this

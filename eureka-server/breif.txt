@@ -1,0 +1,5 @@
+eureka -server
+cart-service
+coupon-service
+product-service
+api-gateway-server
